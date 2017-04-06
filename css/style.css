@@ -1,4 +1,17 @@
 
+/* preloader */
+#preloader{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,10,10,1);z-index:1000}
+@import "compass/css3";
+
+@import "compass/reset";
+@import "compass/css3";
+.spinner{text-align:center;font-size:10px}
+.spinner,.spinner-inner{position:absolute;top:0;bottom:0;right:0;left:0;border:9px solid #1697f2;border-color:transparent #1697f2;margin:auto}
+
+.spinner{width:77px;height:77px;-webkit-animation:spin 2.2s linear 0s infinite normal;-moz-animation:spin 2.2s linear 0s infinite normal;animation:spin 2.2s linear 0s infinite normal}
+
+.spinner-inner{width:30px;height:33px;-webkit-animation:spinback 1.2s linear 0s infinite normal;-moz-animation:spinback 1.2s linear 0s infinite normal;animation:spinback 1.2s linear 0s infinite normal}@-webkit-keyframes spin{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}@-moz-keyframes spin{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(360deg)}}@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}@-webkit-keyframes spinback{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(-360deg)}}@-moz-keyframes spinback{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(-360deg)}}@keyframes spinback{from{transform:rotate(0)}to{transform:rotate(-360deg)}}
+/*preloader*/
 body {
   overflow-x: hidden;
   font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -219,6 +232,7 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
+
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
@@ -241,6 +255,7 @@ header {
   text-align: center;
   color: white;
   width: 105%;
+  right: 15%;
 }
 header .intro-text {
   padding-top: 100px;
@@ -282,6 +297,7 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+
 section {
   padding: 100px 0;
 }
@@ -401,6 +417,7 @@ section h3.section-subheading {
   background-color: #f1f1f1;
   left: 40px;
   margin-left: -1.5px;
+  top: 130px;
 }
 .timeline > li {
   margin-bottom: 50px;
@@ -837,7 +854,7 @@ hr.boringyStraight:after {
 	top: -14px;
 	padding: 0px;
 	background: rgba(55, 34, 55, 0);
-	color: #8c8b8b;
+	color: rgba(83,228,68,0.65);
 	font-size: 18px;
 	-webkit-transform: rotate(60deg);
 	-moz-transform: rotate(60deg);
@@ -867,3 +884,157 @@ hr.everywhere {
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+/* Lightsaber Menu */
+#nav-container{
+	position: absolute;
+	top: 70%;
+	left: 40%;
+	margin:-1.8em;
+  margin-right: 0.6em;
+
+}
+
+/*toggle-icon*/
+.toggle-icon {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: -2.2em auto 0 0.2em;
+	-webkit-transition: margin 600ms;
+	-moz-transition: margin 600ms;
+	transition: margin 600ms;
+	cursor: pointer;
+
+}
+
+.toggle-icon .bar {
+	display: block;
+	width: 3.8em;
+	height: 0.2em;
+	margin: 0.9em;
+	border-right: 2.8em solid #fff;
+	border-left: 0.6em solid #d6d6d6;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+	-moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
+	transition-property: transform, margin, border-right-color, box-shadow;
+	-webkit-transition-duration: 600ms;
+	-moz-transition-duration: 600ms;
+	transition-duration: 600ms;
+}
+	.toggle-icon .bar:nth-of-type(1) {
+		-webkit-transition: opacity 300ms;
+		-moz-transition: opacity 300ms;
+		transition: opacity 300ms;
+	}
+	.toggle-icon .bar:nth-of-type(2) {
+		-webkit-transform: rotate(-180deg);
+		-moz-transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		-o-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+	}
+
+/*pushed*/
+.pushed .toggle-icon {
+	margin: -3.2em 0 0 0.7em;
+}
+
+	.pushed .bar:nth-of-type(1) {
+		opacity: 0;
+	}
+
+	.pushed .bar:nth-of-type(2) {
+		margin-left: 1.4em;
+		-webkit-transform: rotate(-137deg) translateY(-1.5em);
+		-moz-transform: rotate(-137deg) translateY(-1.5em);
+		-ms-transform: rotate(-137deg) translateY(-1.5em);
+		-o-transform: rotate(-137deg) translateY(-1.5em);
+		transform: rotate(-137deg) translateY(-1.5em);
+	}
+
+	.pushed .bar:nth-of-type(3) {
+		margin-left: 0.5em;
+		-webkit-transform: rotate(-42deg);
+		-moz-transform: rotate(-42deg);
+		-ms-transform: rotate(-42deg);
+		-o-transform: rotate(-42deg);
+		transform: rotate(-42deg);
+	}
+
+
+.pushed .toggle-icon:hover .bar:nth-of-type(2) {
+	border-right-color: #e9b8b9;
+	box-shadow: 0.4em 0 0.6em 0.1em rgba(44,40,244,0.75);
+}
+.pushed .toggle-icon:hover .bar:nth-of-type(3) {
+	border-right-color: #ddf1da;
+	box-shadow: 0.4em 0 0.6em 0.1em rgba(283,28,68,0.65);
+}
+
+/*End Of Saber Menu*/
+
+/* psychedelic gradient */
+
+#gradient
+{
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* spinning circles */
+
+#big-circle
+{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:solid 5px #ff5c49;
+  border-left-color: #2e2e2e;
+  border-right-color:#2e2e2e;
+  margin: 20px auto;
+  /* try changing this value to 1s */
+  -webkit-animation: rotation 9s linear infinite;
+}
+#little-circle
+{
+  width:69%;
+  height:69%;
+  margin:30%;
+  border-radius:50%;
+  border:solid 5px #da30c4;
+  border-top-color: #2e2e2e;
+  border-bottom-color:#2e2e2e;
+  -webkit-animation: nrotation 3s linear infinite;
+}
+@-webkit-keyframes rotation {
+	0% 		{ -webkit-transform: rotate(0deg); }
+	50% 	{ -webkit-transform: rotate(180deg); }
+	100% 	{ -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes nrotation {
+	0% 		{ -webkit-transform: rotate(-0deg); }
+	50% 	{ -webkit-transform: rotate(-180deg); }
+	100% 	{ -webkit-transform: rotate(-360deg); }
+}
+
+canvas{
+  margin-top: 50px;
+  margin-bottom: -300px;
+  width: 150%;
+  height: 50%;
+  right: 25%;
+  top: 200px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  z-index: -1;
+  background-color: white;
+}
+
+/* queries for mobile change ugly text */
