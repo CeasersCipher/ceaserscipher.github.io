@@ -11,7 +11,8 @@ added a lot of fancy css/javascript (look for comments)
 feel free to use this as a template for your website, 
 I kindly ask that you'd remove any photos as they are copyrighted
 
-main to-do: optimize for mobile & tablet </br>
-            add projects
+main to-do: 
+</br>optimize for mobile & tablet 
+</br>add projects
             
             
