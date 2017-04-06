@@ -774,7 +774,8 @@ body {
 }
 .topStroke {
   background-color: rgba(55, 34, 55, 0.6);
-  border-radius: 50px;
+  border-radius: 30px;
+  width: 110%;
   font-size: 150%;
   -webkit-text-stroke: 0.01px #1697f2;
   color: rgba(55, 34, 55, 0.8);
@@ -836,7 +837,7 @@ hr.boringyStraight:after {
 	top: -14px;
 	padding: 0px;
 	background: rgba(55, 34, 55, 0);
-	color: #197d82;
+	color: #8c8b8b;
 	font-size: 18px;
 	-webkit-transform: rotate(60deg);
 	-moz-transform: rotate(60deg);
