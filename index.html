@@ -28,17 +28,36 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
 </head>
 
 <body id="page-top" class="index">
-
+  <!-- PRELOADER -->
+    <div id="preloader">
+      <div class="spinner"><div class="spinner-inner"></div></div>
+    </div>
+    <!-- /PRELOADER -->
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle " data-toggle="collapse"  data-target="#bs-example-navbar-collapse-1" >
+
+                    <span class="sr-only">Toggle navigation</span>
+                      Menu
+                  <i class="fa">
+
+
+
+                    <div id="nav-container" style="position: relative;">
+                      <div class="toggle-icon">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </div><!-- /toggle-icon -->
+                    </div><!-- /nav-container --></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">TSav - Ceasars Cipher</a>
             </div>
@@ -146,11 +165,20 @@
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
+
         <div class="container">
+
+
+
             <div class="row">
                 <div class="col-lg-12 text-center">
+                  <!-- spinning circles -->
+
                     <h2 class="section-heading">Portfolio</h2>
                     <h3 class="section-subheading text-muted">My Worthy Creations Will Find Themselves Here!</h3>
+                    <div id="big-circle">
+                      <div id="little-circle"></div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -250,7 +278,7 @@
 
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">A Little time-line</h2>
+                    <h2 class="section-heading">A time-line of materials</h2>
                     <h3 class="section-subheading text-muted">What resources I've been using.</h3>
                 </div>
             </div>
@@ -329,6 +357,31 @@
                                     <br>Change,
                                     <br>History!</h4>
                             </div>
+
+                            <!-- particle blast -->
+                            <canvas id="c"></canvas>
+
+<script id="shader-fs" type="x-shader/x-fragment">
+				#ifdef GL_ES
+				  precision highp float;
+				  #endif
+    		void main(void) {
+    		 gl_FragColor = vec4(0.6, 0.1, 0.4, 1.0);
+    		}
+		</script>
+
+  <script id="shader-vs" type="x-shader/x-vertex">
+    	attribute vec3 vertexPosition;
+
+  	uniform mat4 modelViewMatrix;
+  	uniform mat4 perspectiveMatrix;
+
+   	void main(void) {
+  		gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+  	}
+  </script>
+
+  <!-- end particle blast -->
                         </li>
                     </ul>
                 </div>
@@ -350,12 +403,15 @@
 
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
+        <div id="gradient">
         <div class="container">
+
+
 
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">A Little About Me!</h2>
-                    <h3 class="section-subheading text-muted">Be like water.<small> Always a fan of motivational quotes</small></h3>
+                    <h2 class="section-heading" style="color:white;"></br>A Little About Me!</h2>
+                    <h3 class="section-subheading text-muted">Vini Vidi Amavi.<small> A fan of obscure quotes</small></h3>
                 </div>
             </div>
             <div class="row">
@@ -378,9 +434,13 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                   <hr class='everywhere' />
-                    <p class="large text-muted">I have been whole-heartedly studying web-development since the beginning of 2017.</br>That said I have always had a deep passion for technology, </br>
-                    quickly developping a profiecency for HTML, CSS, and trying to fill my daily javascription</br>
-                    also a PhotoShop addict & now migrating to this awesome program called Affinity-Designer
+                    <p class="large text-muted" style="color: white; margin-top: -70px;">I have been whole-heartedly studying web-development since the beginning of 2017.</br>That said I have always had a deep passion for technology, </br> </p>
+                                <hr class="everywhere" />
+                    <p class="large text-muted" style="margin-bottom: -110px;">
+
+
+                    Quickly developping a profiecency for HTML, CSS, and trying to fill my daily javascription</br>
+                    Also a PhotoShop addict & now migrating to this awesome program called Affinity-Designer
                     </p>
                     <hr class='everywhere' />
                 </div>
@@ -390,12 +450,9 @@
             <!-- here is ou background image -->
 
 
-            <div class="prlx-2">
-              <div clas="gradientPleaseWork">
 
-
-
-
+        </div>
+        </div>
         </div>
     </section>
 
@@ -692,7 +749,7 @@ Extra Project Modals
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
 
 
     <!-- parallax script -->
@@ -715,8 +772,8 @@ Extra Project Modals
       $("header").mousemove(function(e){
                 var pageX = e.pageX - ($(window).width() / 2);
                 var pageY = e.pageY - ($(window).height() / 2);
-                var newvalueX = width * pageX * -1 - 25;
-                var newvalueY = height * pageY * -1 - 50;
+                var newvalueX = width * pageX * -1 - 20;
+                var newvalueY = height * pageY * -1 - 100;
                 $('header').css("background-position", newvalueX+"px     "+newvalueY+"px");
       });
 
