@@ -795,7 +795,7 @@ body {
   width: 110%;
   font-size: 150%;
   -webkit-text-stroke: 0.01px #1697f2;
-  color: rgba(55, 34, 55, 0.8);
+  color: hsla(205, 88%, 51%, 0.5)
 }
 
 *[class^="prlx"] {
