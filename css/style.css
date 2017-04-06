@@ -230,7 +230,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('https://res.cloudinary.com/ceasarspalace/image/upload/v1491452316/header-bg_lckzuh.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
