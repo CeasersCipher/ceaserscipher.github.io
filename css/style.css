@@ -60,6 +60,8 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+.form-control {color: #139ad3;
+;}
 .img-centered {
   margin: 0 auto;
 }
@@ -244,7 +246,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('https://res.cloudinary.com/ceasarspalace/image/upload/v1491452316/header-bg_lckzuh.jpg');
+/* background-image: url('https://res.cloudinary.com/ceasarspalace/image/upload/v1491452316/header-bg_lckzuh.jpg'); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -254,12 +256,13 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white;
-  width: 105%;
-  right: 15%;
+  width: 100%;
+  right: 0;
 }
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
+
 }
 header .intro-text .intro-lead-in {
   font-family: "Bungee Hairline", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -267,6 +270,7 @@ header .intro-text .intro-lead-in {
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
+  padding-right: 3em;
 }
 header .intro-text .intro-heading {
   font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -275,6 +279,7 @@ header .intro-text .intro-heading {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
+  padding-right: 1.5em;
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -295,6 +300,7 @@ header .intro-text .intro-heading {
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
+
   }
 }
 
@@ -592,7 +598,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  /* background-image: url('../img/map-image.png');       cuz ugly */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -606,6 +612,7 @@ section#contact .form-group input,
 section#contact .form-group textarea {
   padding: 20px;
 }
+
 section#contact .form-group input.form-control {
   height: auto;
 }
@@ -783,19 +790,18 @@ body {
 }
 #letsWork {
   font-size: 400%;
-  color: #cbaa76;
+  color: #9ccf4a;
 }
 #beSmall {
   font-size: 150%;
   color: #cbaaBB;
 }
 .topStroke {
-  background-color: rgba(55, 34, 55, 0.6);
   border-radius: 30px;
   width: 110%;
   font-size: 150%;
-  -webkit-text-stroke: 0.01px #1697f2;
-  color: hsla(205, 88%, 51%, 0.5)
+  -webkit-text-stroke: 0.01px #3adbeb;
+  color: hsla(208, 76%, 27%, 0.6);
 }
 
 *[class^="prlx"] {
@@ -826,12 +832,12 @@ body {
 }
 
 .messageButton {
-  background-color: #caaa99;
-  border-color: #caaa99;
+  background-color: #668d28;
+  border-color: #668d28;
   border-radius: 15px;
 }
 .normalizeText {
-  font-family: 'Yellowtail', cursive;
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .greyBox {
   background-color: rgba(55, 34, 55, 0.6);
@@ -873,12 +879,13 @@ hr.boringyStraight:after {
   }
 }
 
-
+/*
 .tanningBox {
   background-color: hsla(37, 45%, 63%, 0.2);
   border-radius: 100px;
   color: hsla(37, 45%, 63%, 0.2);
 }
+*/
 hr.everywhere {
   border : 0;
   height: 1px;
@@ -968,11 +975,11 @@ hr.everywhere {
 
 .pushed .toggle-icon:hover .bar:nth-of-type(2) {
 	border-right-color: #e9b8b9;
-	box-shadow: 0.4em 0 0.6em 0.1em rgba(44,40,244,0.75);
+	box-shadow: 0.4em 0 0.6em 0.1em rgba(255, 27, 0, 0.96);
 }
 .pushed .toggle-icon:hover .bar:nth-of-type(3) {
 	border-right-color: #ddf1da;
-	box-shadow: 0.4em 0 0.6em 0.1em rgba(283,28,68,0.65);
+	box-shadow: 0.4em 0 0.6em 0.1em rgba(192, 255, 60, 0.96);
 }
 
 /*End Of Saber Menu*/
@@ -1028,7 +1035,7 @@ canvas{
   margin-bottom: -300px;
   width: 150%;
   height: 50%;
-  right: 25%;
+  right: 285px;
   top: 200px;
   overflow: hidden;
   position: relative;
@@ -1036,5 +1043,3 @@ canvas{
   z-index: -1;
   background-color: white;
 }
-
-/* queries for mobile change ugly text */
