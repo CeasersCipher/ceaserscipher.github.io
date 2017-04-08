@@ -800,8 +800,8 @@ body {
   border-radius: 30px;
   width: 110%;
   font-size: 150%;
-  -webkit-text-stroke: 0.01px #3adbeb;
-  color: hsla(208, 76%, 27%, 0.6);
+  -webkit-text-stroke: 0.01px #ddd;
+  color: hsla(163, 100%, 50%, 0.6);
 }
 
 *[class^="prlx"] {
