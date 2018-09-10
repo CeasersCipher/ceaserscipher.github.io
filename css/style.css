@@ -17,7 +17,7 @@ body {
   font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #099;
+  color: #f1f1f1;
   font-size: 90%;
   -webkit-text-stroke: 0.2px black;
 }
@@ -66,7 +66,7 @@ h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #eeeeee;
+  background-color: #000000;
 }
 .bg-darkest-gray {
   background-color: #222222;
@@ -273,7 +273,7 @@ header .intro-text .intro-lead-in {
   padding-right: 3em;
 }
 header .intro-text .intro-heading {
-  font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Bungee Hairline", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
@@ -294,7 +294,7 @@ header .intro-text .intro-heading {
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
-    font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Bungee Hairline", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 75px;
@@ -343,6 +343,7 @@ section h3.section-subheading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+  color: white;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -620,34 +621,34 @@ section#contact .form-group textarea.form-control {
   height: 236px;
 }
 section#contact .form-control:focus {
-  border-color: #82ab2e;
+  border-color: #f1f1f1;
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
-  font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Julius Sans One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #000000;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
-  font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Julius Sans One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #000000;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Julius Sans One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #000000;
 }
 section#contact :-ms-input-placeholder {
-  font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Julius Sans One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #000000;
 }
 section#contact .text-danger {
   color: #e74c3c;
@@ -777,7 +778,7 @@ ul.social-buttons li a:active {
 }
 ::selection {
   text-shadow: none;
-  background: #82ab2e;
+  background: #fafafa;
 }
 img::selection {
   background: transparent;
@@ -828,7 +829,7 @@ body {
   border-color: #6dcafb;
 }
 .text-bluey{
-  color: #1697f2;
+  color: #daf0ff;
 }
 
 .messageButton {
@@ -1041,5 +1042,5 @@ canvas{
   position: relative;
   float: left;
   z-index: -1;
-  background-color: white;
+  background-color: black;
 }
